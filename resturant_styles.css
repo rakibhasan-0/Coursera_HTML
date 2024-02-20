@@ -1,0 +1,110 @@
+*{
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/** header section describes the header used flex layout in order to to center the image.**/
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header img {
+  display: block;
+  max-width: 500px;
+  margin-top: 3%;
+}
+
+
+
+/** nav section describes the navigation bar.**/
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+  background-color: black;
+  color: white;
+  border-radius: 5px;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+
+/** promotion section describes the promotion section.**/
+.promotion {
+  display: flex;
+  flex-direction: column;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1%;
+  color: white;
+  font-weight: bold;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.3)), url("Utilities/Easy-chicken-and-bacon-pasta_Mobile-1300x1150.webp"); /** it describes the promotion image by adding black shedding on the image*/
+  background-size: cover;
+  padding: 3%;
+  border-radius: 5px;
+}
+
+
+
+.menu{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-column-gap: 0px;
+  margin-left: 5%;
+  margin-right: 5%;
+  gap: 3%;
+}
+
+
+.menu-item{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: wheat;
+  border-radius: 5px;
+  padding: 3%;
+  margin-top: 5%;
+}
+
+.menu-item img{
+  width: 70%;
+  height: 80%;
+  border-radius: 5px;
+}
+
+.menu-button{
+  background-color: white;
+  color: black;
+  padding: 4%;
+}
+
+.menu-button:hover{
+  background-color: black;
+  color: white;
+}
+
+
+footer{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  margin-left: 15%;
+  margin-top: 3%;
+}
+
+footer img{
+  margin-top: 2%;
+  width: 20%;
+  height: 60%
+}
+
+footer p{
+  font-size: 20px;
+  border-top: 2px solid black; 
+  margin-right: 12%;
+}
